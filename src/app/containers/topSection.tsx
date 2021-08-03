@@ -8,7 +8,7 @@ import { SCREENS } from '../components/responsive';
 import { Button } from '../components/button';
 
 const TopSectionContainer = styled.div`
-    min-height: 600px;
+    min-height: 400px;
     margin-top: 6em;
     ${tw`
         w-full
@@ -142,7 +142,8 @@ const StandaloneCar = styled.div`
 const ButtonsContainer = styled.div`
     ${tw`
     flex
-    mt-4 
+    flex-wrap
+    mt-4
     `}
 `;
 
