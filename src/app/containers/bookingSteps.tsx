@@ -22,8 +22,8 @@ const Container = styled.div`
 
 const Title = styled.h2`
     ${tw`
-        text-xl 
-        lg:text-4xl 
+        text-3xl 
+        lg:text-5xl 
         text-black
         font-extrabold
     `};
@@ -44,15 +44,16 @@ const StepContainer = styled.div`
     ${tw`
         flex
         flex-col
-        w-16 
         md:w-96 
         items-center
         transition-colors
         hover:text-red-500 
+        m-3 
     `};
 `;
 
 const Step = styled.div`
+box-shadow: 0 1.3px 12px -3px rgba(0, 0, 0, 0.4);
     ${tw`
         flex 
         rounded-lg
@@ -90,6 +91,7 @@ const StepIcon = styled.span`
 
 export function BookingSteps() {
     return <Container>
+        <Title>Our Working Steps</Title>
         <StepsContainer>
         <StepContainer>
             <Step>
