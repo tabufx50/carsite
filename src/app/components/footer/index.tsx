@@ -12,10 +12,11 @@ const FooterContainer = styled.div`
     background-color: #1d2124;
     ${tw`
         flex
+        flex-col
         min-w-full
         pt-10 
         md:pt-12 
-        pb-1 
+        pb-5 
         items-center
         justify-center
     `};
@@ -28,8 +29,22 @@ const InnerContainer = styled.div`
         w-full
         h-full
         max-w-screen-2xl
-        justify-center
+        
     `};
+`;
+
+const BottomContainer = styled.div`
+    ${tw`
+        flex
+    `};
+`;
+
+const CopyrightText = styled.small`
+    font-size: 12px;
+    ${tw`
+        text-gray-500 
+        mt-3 
+    `}
 `;
 
 const AboutContainer = styled.div`
@@ -180,6 +195,9 @@ const SmallText = styled.div`
                 </HorizontalContainer>
         </SectionContainer>
         </InnerContainer>
+        <BottomContainer>
+            <CopyrightText>Copyright &copy; {new Date().getFullYear()} Yourcar. All rights reserved.</CopyrightText>
+        </BottomContainer>
     </FooterContainer>
 
  }
